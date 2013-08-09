@@ -11,8 +11,8 @@
     <div class="row">
         <ul class="span5" >
             <li class="nav-pills nav-stacked contact-row" data-ng-repeat="contact in contacts | orderBy:'firstName'">
-                <a id="ct-details-{{contact.id}}" class="contact-data details-hidden" href="" data-ng-click="showDetails($event, contact.id)">
-                    <span class="span3 contact-name">{{contact.firstName + ' ' + contact.lastName}}  
+                <a id="ct-details-{{contact.id}}" class="contact-data details-hidden" href="" data-ng-click="showDetails(contact.id)">
+                    <span class="span3 contact-name">{{contact.firstName + ' ' + contact.lastName}}
                         {{contact.emailAddress}}</span>
                     <button class="btn editContact" data-ng-click="editContact(contact.id)">Edit</button>
                     <ul class="contact-details">
