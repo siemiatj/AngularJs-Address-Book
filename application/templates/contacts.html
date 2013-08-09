@@ -1,0 +1,28 @@
+<div class="container view">
+    <header>
+        <h3>Contacts</h3>
+    </header>
+
+    <div>
+        <a class="nav-pills hover" href="#/add-contact">Add Contact</a>
+    </div>
+    <br /><br />
+
+    <div class="row">
+        <ul class="span5" >
+            <li class="nav-pills nav-stacked contact-row" data-ng-repeat="contact in contacts | orderBy:'firstName'">
+                <a id="ct-details-{{contact.id}}" class="contact-data details-hidden" href="" data-ng-click="showDetails($event, contact.id)">
+                    <span class="span3 contact-name">{{contact.firstName + ' ' + contact.lastName}}  
+                        {{contact.emailAddress}}</span>
+                    <button class="btn editContact" data-ng-click="editContact(contact.id)">Edit</button>
+                    <ul class="contact-details">
+                        <li>Address: {{contact.address}}</li>
+                        <li>Zip-code: {{contact.zipCode}}</li>
+                        <li>City: {{contact.city}}</li>
+                        <li>Country: {{contact.country}}</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="container view">
+    <header>
+        <h3>Edit Contact</h3>
+    </header>
+
+    <div>
+        <a class="nav-pills active" href="#/contacts">Back</a>
+    </div>
+    <br /><br />
+
+    <div class="row add-contact">
+            <div class="span3">
+                First Name:
+                <br />
+                <input data-ng-model="contact.firstName" type="text">
+            </div>
+            <div class="span3">
+                Last Name:
+                <br />
+                <input data-ng-model="contact.lastName" type="text">
+            </div>
+            <div class="span3">
+                Email:
+                <br />
+                <input data-ng-model="contact.emailAddress" type="text">
+            </div>
+            <div class="span3">
+                Address:
+                <br />
+                <input data-ng-model="contact.address" type="text">
+            </div>
+            <div class="span3">
+                Zip Code:
+                <br />
+                <input data-ng-model="contact.zipCode" type="text">
+            </div>
+            <div class="span3">
+                City:
+                <br />
+                <input data-ng-model="contact.city" type="text">
+            </div>
+            <div class="span3">
+                Country:
+                <br />
+                <input data-ng-model="contact.country" type="text">
+            </div>
+            <div class="span3">
+                <button id="submitContact" class="btn btn-primary" type="button" 
+                    data-ng-disabled="!contact.firstName || !contact.lastName || !contact.emailAddress" 
+                    data-ng-click="editContact()">Save Contact</button>
+            </div>
+    </div>
+</div>

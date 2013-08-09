@@ -1,0 +1,83 @@
+[class*="span"] {
+    float: none;
+}
+
+.example-leave-setup, .example-enter-setup {
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    -ms-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+}
+ 
+.example-animate-container {
+    position:relative;
+    height:100px;
+}
+ 
+.example-animate-container > * {
+    display:block;
+    width:600px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:10px;
+}
+ 
+.example-enter-setup {
+    left:100%;
+}
+.example-enter-setup.example-enter-start {
+    left:0;
+}
+ 
+.example-leave-setup { }
+.example-leave-setup.example-leave-start {
+    left:-100%;
+}
+
+ul.span5 {
+    list-style: none;
+    float: none;
+}
+
+.contact-row {
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.contact-row a {
+    text-decoration: none;
+}
+
+.contact-row a:hover, .contact-row a:focus {
+    color: #f8f8f8;
+}
+
+.editContact {
+    float:right;
+    margin-right: 5px;
+}
+
+.contact-data {
+    background-color: #428BCA;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 100%;
+    padding-top:7px;
+    display:block;    
+}
+
+.details-hidden {
+    height: 40px;
+}
+
+.details-hidden ul{
+    display:none;
+}
+
+.add-contact .span3 {
+    float:none;
+}
