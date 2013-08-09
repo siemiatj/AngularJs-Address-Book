@@ -12,41 +12,41 @@
             <div class="span3">
                 First Name:
                 <br />
-                <input data-ng-model="newContact.firstName" type="text" placeholder="First Name">
+                <input data-ng-model="contact.firstName" type="text" placeholder="First Name">
             </div>
             <div class="span3">
                 Last Name:
                 <br />
-                <input data-ng-model="newContact.lastName" type="text" placeholder="Last Name">
+                <input data-ng-model="contact.lastName" type="text" placeholder="Last Name">
             </div>
             <div class="span3">
                 Email:
                 <br />
-                <input data-ng-model="newContact.emailAddress" type="text" placeholder="Email">
+                <input data-ng-model="contact.emailAddress" type="text" placeholder="Email">
             </div>
             <div class="span3">
                 Address:
                 <br />
-                <input data-ng-model="newContact.address" type="text" placeholder="Address">
+                <input data-ng-model="contact.address" type="text" placeholder="Address">
             </div>
             <div class="span3">
                 Zip Code:
                 <br />
-                <input data-ng-model="newContact.zipCode" type="text" placeholder="Zip Code">
+                <input data-ng-model="contact.zipCode" type="text" placeholder="Zip Code">
             </div>
             <div class="span3">
                 City:
                 <br />
-                <input data-ng-model="newContact.city" type="text" placeholder="City">
+                <input data-ng-model="contact.city" type="text" placeholder="City">
             </div>
             <div class="span3">
                 Country:
                 <br />
-                <input data-ng-model="newContact.country" type="text" placeholder="Country">
+                <input data-ng-model="contact.country" type="text" placeholder="Country">
             </div>
             <div class="span3">
-                <button id="submitContact" class="btn btn-primary" type="button" 
-                    data-ng-disabled="!newContact.firstName || !newContact.lastName || !newContact.emailAddress" 
+                <button id="submitContact" class="btn btn-primary" type="button"
+                    data-ng-disabled="!contact.firstName || !contact.lastName || !contact.emailAddress"
                     data-ng-click="insertContact()">Add Contact</button>
             </div>
     </div>
