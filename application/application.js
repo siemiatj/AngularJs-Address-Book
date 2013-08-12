@@ -12,7 +12,7 @@ app.config(function ($routeProvider) {
                 controller: 'ContactAddController',
                 templateUrl: './application/templates/addContact.html'
             })
-        .when('/edit-contact/:contactID',
+        .when('/edit-contact/:contactId',
             {
                 controller: 'ContactEditController',
                 templateUrl: './application/templates/editContact.html'
